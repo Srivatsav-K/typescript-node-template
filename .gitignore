@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+logs/
+debug/
+.env
+coverage/
+dump.rdb
+isolate-*
+flamegraph.html
+.vscode/
