@@ -13,13 +13,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.12.7",
-    "@typescript-eslint/eslint-plugin": "^7.6.0",
-    "@typescript-eslint/parser": "^7.6.0",
-    "eslint": "^8.56.0",
-    "nodemon": "^3.1.0",
+    "@eslint/js": "^9.6.0",
+    "@types/node": "^20.14.9",
+    "eslint": "9.x",
+    "globals": "^15.7.0",
+    "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.14.1"
   },
   "engines": {
     "node": ">=20.0.0",
