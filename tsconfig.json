@@ -12,6 +12,7 @@
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
+    "removeComments": true,
 
     /* If transpiling with TypeScript: */
     "module": "NodeNext",
