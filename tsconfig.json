@@ -25,12 +25,7 @@
     "module": "NodeNext",
     "outDir": "dist",
     "sourceMap": true,
-    /* Emit */
-    "declaration": true,
-    "declarationMap": true,
-    "downlevelIteration": true,
     "sourceRoot": "/",
-    "mapRoot": "/",
     "inlineSources": true,
 
     /* If your code doesn't run in the DOM: */
