@@ -74,9 +74,6 @@ pids
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-
 # Sentry Config File
 .sentryclirc
 
