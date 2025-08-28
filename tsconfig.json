@@ -13,13 +13,50 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "checkJs": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
 
     /* If transpiling with TypeScript: */
     "module": "NodeNext",
     "outDir": "dist",
     "sourceMap": true,
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "sourceRoot": "/",
+    "mapRoot": "/",
+    "inlineSources": true,
 
     /* If your code doesn't run in the DOM: */
-    "lib": ["es2022"]
-  }
+    "lib": ["es2022"],
+
+    /* Build Performance */
+    "incremental": true,
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+
+    /* Path Mapping */
+    "baseUrl": "."
+    // "paths": {
+    //   "@/*": ["src/*"],
+    //   "@/controllers/*": ["src/controllers/*"],
+    //   "@/middleware/*": ["src/middleware/*"],
+    //   "@/types/*": ["src/types/*"],
+    //   "@/utils/*": ["src/utils/*"],
+    //   "@/config/*": ["src/config/*"]
+    // }
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.d.ts"
+  ]
 }
