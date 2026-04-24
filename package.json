@@ -1,8 +1,8 @@
 {
   "name": "typescript-node-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Opinionated TypeScript + Node.js starter with strict tsconfig, ESLint (incl. security), pnpm workspace policies, and multi-stage Docker",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon",
     "clean": "rm -rf dist",
@@ -11,9 +11,25 @@
     "start": "node dist/index.js",
     "lint": "eslint src/**/*.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "typescript",
+    "node",
+    "template",
+    "eslint",
+    "pnpm",
+    "docker"
+  ],
+  "author": "Srivatsav K",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Srivatsav-K/typescript-node-template.git"
+  },
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=10.33.2"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/eslint-plugin-security": "^3.0.1",
@@ -25,9 +41,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.0"
-  },
-  "engines": {
-    "node": ">=24.0.0",
-    "pnpm": ">=10.33.2"
   }
 }
