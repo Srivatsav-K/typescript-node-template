@@ -25,7 +25,7 @@ WORKDIR /usr/src/app
 # Install production dependencies
 FROM base AS deps
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 # Install only production dependencies
 RUN pnpm install --frozen-lockfile --prod
@@ -35,7 +35,7 @@ RUN pnpm install --frozen-lockfile --prod
 # Build stage
 FROM base AS build
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 # Install production and dev dependencies
 RUN pnpm install --frozen-lockfile
