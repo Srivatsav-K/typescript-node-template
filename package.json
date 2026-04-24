@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "build": "rm -rf dist && pnpm run lint && tsc",
+    "clean": "rm -rf dist",
+    "build": "pnpm run lint && tsc",
+    "clean-build": "pnpm run clean && pnpm run build",
     "start": "node dist/index.js",
     "lint": "eslint src/**/*.ts"
   },
