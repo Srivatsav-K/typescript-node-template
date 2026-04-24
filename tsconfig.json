@@ -3,7 +3,7 @@
     /* Base Options: */
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "es2022",
+    "target": "es2024",
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleDetection": "force",
@@ -24,34 +24,18 @@
     /* If transpiling with TypeScript: */
     "module": "NodeNext",
     "outDir": "dist",
+    "rootDir": "./src",
     "sourceMap": true,
-    "sourceRoot": "/",
     "inlineSources": true,
 
     /* If your code doesn't run in the DOM: */
-    "lib": ["es2022"],
+    "lib": ["es2024"],
+    "types": ["node"],
 
     /* Build Performance */
     "incremental": true,
-    "tsBuildInfoFile": "dist/.tsbuildinfo",
-
-    /* Path Mapping */
-    "baseUrl": "."
-    // "paths": {
-    //   "@/*": ["src/*"],
-    //   "@/controllers/*": ["src/controllers/*"],
-    //   "@/middleware/*": ["src/middleware/*"],
-    //   "@/types/*": ["src/types/*"],
-    //   "@/utils/*": ["src/utils/*"],
-    //   "@/config/*": ["src/config/*"]
-    // }
+    "tsBuildInfoFile": "dist/.tsbuildinfo"
   },
   "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.spec.ts",
-    "**/*.test.ts",
-    "**/*.d.ts"
-  ]
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
 }
