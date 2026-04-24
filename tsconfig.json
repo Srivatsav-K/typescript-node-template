@@ -30,6 +30,7 @@
 
     /* If your code doesn't run in the DOM: */
     "lib": ["es2024"],
+    /* TS 6+: default `types` is [] — list globals (e.g. `console` from @types/node). Use ["*"] for old "load all @types" behavior */
     "types": ["node"],
 
     /* Build Performance */
